@@ -14,5 +14,5 @@ RUN echo export JAVA_HOME=/opt/java8 >> /etc/profile
 RUN echo export PATH=$PATH:/opt/java8/bin >> /etc/profile
 ENV JAVA_HOME "/opt/java8"
 ENV PATH "${JAVA_HOME}/bin:${PATH}"
-EXPOSE 8080
+EXPOSE 8282
 CMD ["/opt/tomcat8/bin/catalina.sh", "run"]
